@@ -1,6 +1,6 @@
 class SuperClassA {
 
-	public void foo(){
+	public void MethodOfA(){
 		System.out.println("SuperClassA");
 	}
 	
@@ -8,7 +8,7 @@ class SuperClassA {
 
 class SubClassB extends SuperClassA{
 		
-	public void bar(){
+	public void MethodOfB(){
 		System.out.println("SubClassB");
 	}
 	
@@ -16,9 +16,9 @@ class SubClassB extends SuperClassA{
 
 public class Test {
 	public static void main(String args[]){
-		SubClassB a = new SubClassB();
+		SubClassB b = new SubClassB();
 		
-		a.foo();
-		a.bar();
+		b.MethodOfA();
+		b.MethodOfB();
 	}
 }
